@@ -1,0 +1,264 @@
+
+  <!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="w3.css">-->
+
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+      /*table, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+      }*/
+
+      .texto{
+        text-align: center;
+        vertical-align: center;
+      }
+
+      th{
+        height: 50px;
+        color: white;
+        background-color: blue;
+      }
+
+    </style>
+
+  </head>
+  <body>
+
+
+    <table class="w3-table">
+       <thead class="" >
+         <tr >
+         <th>Hora</th>
+         <th>Lunes</th>
+         <th>Martes</th>
+         <th>Miercoles</th>
+         <th>Jueves</th>
+         <th>Viernes</th>
+       </tr>
+       </thead>
+       <tbody>
+
+         <tr>
+         <td class="">02:00 PM<br>03:00 PM </td>
+         <td class="w3-teal"><button onclick="document.getElementById('ingles').style.display='block'"
+         class="w3-button w3-hover-teal">Lengua Extranjera VI</button></td>
+         <td  rowspan="2" class="w3-indigo"><button onclick="document.getElementById('RE').style.display='block'"
+         class="w3-button w3-hover-indigo">Reflexion Etica</button></td>
+         <td  rowspan="2" class="w3-teal"><button onclick="document.getElementById('ingles').style.display='block'"
+         class="w3-button w3-hover-teal">Lengua Extranjera VI</button></td>
+         <td  rowspan="2" class="w3-khaki">Habilidad Verbal</td>
+         <td></td>
+         </tr>
+
+         <tr>
+         <td class="">03:00 PM<br>04:00 PM</td>
+         <td  rowspan="3" class="w3-red"><button onclick="document.getElementById('mate').style.display='block'"
+         class="w3-button w3-hover-red">Matematica Avanzada</button></td>
+         <td  rowspan="3" class="w3-deep-orange"><button onclick="document.getElementById('PC').style.display='block'"
+         class="w3-button w3-hover-deep-orange">Proteccion civil</button></td>
+         </tr>
+
+         <tr>
+         <td class="">04:00 PM<br>05:00 PM </td>
+         <td class="w3-yellow"><button onclick="document.getElementById('economia').style.display='block'"
+         class="w3-button w3-hover-yellow">Analisis Economico</button></td>
+         <td  rowspan="2" class="w3-yellow"><button onclick="document.getElementById('economia').style.display='block'"
+         class="w3-button w3-hover-yellow">Analisis Economico</button></td>
+         <td  rowspan="3" class="w3-brown"><button onclick="document.getElementById('geografia').style.display='block'"
+         class="w3-button w3-hover-brown">Geografia y cuidado <br> del entorno</button></td>
+         </tr>
+
+         <tr>
+         <td class="">05:00 PM<br>06:00 PM </td>
+         <td></td>
+         </tr>
+
+         <tr>
+         <td class="">06:00 PM<br>07:00 PM </td>
+         <td  rowspan="2" class="w3-deep-purple"><button onclick="document.getElementById('Barbara').style.display='block'"
+         class="w3-button w3-hover-deep-purple">Como odiar tu vida y<br>no morir en el intento </button></td>
+         <td></td>
+         <td rowspan="2" class="w3-pink">¿Como maltratar gente?</td>
+         <td  rowspan="2" class="w3-deep-purple"><button onclick="document.getElementById('Barbara').style.display='block'"
+         class="w3-button w3-hover-deep-purple">Como odiar tu vida y<br>no morir en el intento </button></td>
+         </tr>
+
+         <tr>
+         <td class="">07:00 PM<br>08:00 PM </td>
+         <td></td>
+         <td class="w3-indigo"><button onclick="document.getElementById('RE').style.display='block'"
+         class="w3-button w3-hover-indigo">Reflexion Etica</button></td>
+
+         </tr>
+       </tbody>
+    </table>
+
+    <!-- Materia de geografia -->
+    <div id="geografia" class="w3-modal">
+      <div class="w3-modal-content w3-animate-top">
+
+        <div class="w3-container w3-brown">
+          <span onclick="document.getElementById('geografia').style.display='none'"
+          class="w3-button w3-display-topright">&times;</span>
+          <h1>Maestros 6° semestre</h1>
+        </div>
+        <div class="w3-container">
+          <img src="http://www.prepa13.sems.udg.mx/sites/default/files/pmm_0.jpg" alt="" style="float:right; margin:10px;">
+          <h3>Mtro. Miguel Medina García</h3>
+          <p>Geografia y cuidado del entorno</p>
+          <p>Jueves       4:00-7:00PM</p>
+        </div>
+        <div class="w3-container w3-brown">
+          <p>Preparatoria 13 UdeG</p>
+        </div>
+      </div>
+    </div>
+
+
+<!-- Materia de Proteccion Civil -->
+    <div id="PC" class="w3-modal">
+      <div class="w3-modal-content w3-animate-top">
+
+        <div class="w3-container w3-deep-orange">
+          <span onclick="document.getElementById('PC').style.display='none'"
+          class="w3-button w3-display-topright">&times;</span>
+          <h1>Maestros 6° semestre</h1>
+        </div>
+        <div class="w3-container">
+          <img src="http://prepa13.sems.udg.mx/sites/default/files/victor_ortega.jpg" alt="" style="float:right; margin:10px;">
+          <h3>Lic. Victor Ramón Ortega Ramírez</h3>
+          <p>TAE Proteccion Civil</p>
+          <p>Viernes      3:00-6:00PM</p>
+        </div>
+        <div class="w3-container w3-deep-orange">
+          <p>Preparatoria 13 UdeG</p>
+        </div>
+      </div>
+    </div>
+
+<!-- Materia de Reflexion etica -->
+<div id="RE" class="w3-modal">
+  <div class="w3-modal-content w3-animate-top">
+
+    <div class="w3-container w3-indigo">
+      <span onclick="document.getElementById('RE').style.display='none'"
+      class="w3-button w3-display-topright">&times;</span>
+      <h1>Maestros 6° semestre</h1>
+    </div>
+    <div class="w3-container">
+      <img src="http://www.prepa13.sems.udg.mx/sites/default/files/pmm_0.jpg" alt="" style="float:right; margin:10px;">
+      <h3>Mtro. Miguel Medina García</h3>
+      <p>Reflexion Etica</p>
+      <p>Martes   2:00-4:00PM</p>
+      <p>Jueves   7:00-8:00PM</p>
+    </div>
+    <div class="w3-container w3-indigo">
+      <p>Preparatoria 13 UdeG</p>
+    </div>
+  </div>
+</div>
+
+<!-- Materia de Barbara-->
+<div id="Barbara" class="w3-modal">
+  <div class="w3-modal-content w3-animate-top">
+
+    <div class="w3-container w3-deep-purple">
+      <span onclick="document.getElementById('Barbara').style.display='none'"
+      class="w3-button w3-display-topright">&times;</span>
+      <h1>Maestros 6° semestre</h1>
+    </div>
+    <div class="w3-container">
+      <img src="Barbara-Flores.jpg" alt="" style="float:right; margin:10px;">
+      <h3>Lic. Barbara Flores Sanches</h3>
+      <p>Como odiar tu vida y no morir en el intento</p>
+      <p>Lunes       6:00-8:00PM</p>
+      <p>Viernes       6:00-8:00PM</p>
+    </div>
+    <div class="w3-container w3-deep-purple">
+      <p>Preparatoria 13 UdeG</p>
+    </div>
+  </div>
+</div>
+
+<!-- Materia de ingles -->
+<div id="ingles" class="w3-modal">
+  <div class="w3-modal-content w3-animate-top">
+
+    <div class="w3-container w3-teal">
+      <span onclick="document.getElementById('ingles').style.display='none'"
+      class="w3-button w3-display-topright">&times;</span>
+      <h1>Maestros 6° semestre</h1>
+    </div>
+    <div class="w3-container">
+      <img src="avatar-mujer.png" alt="" style="float:right; margin:10px;">
+      <h3>Lic. </h3>
+      <p><i>Lengua Extranjera VI</i></p>
+      <p>Lunes       2:00-3:00PM</p>
+      <p>Miercoles       2:00-4:00PM</p>
+    </div>
+    <div class="w3-container w3-teal">
+      <p>Preparatoria 13 UdeG</p>
+    </div>
+  </div>
+</div>
+
+<!-- Materia de Matematica -->
+<div id="mate" class="w3-modal">
+  <div class="w3-modal-content w3-animate-top">
+
+    <div class="w3-container w3-red">
+      <span onclick="document.getElementById('mate').style.display='none'"
+      class="w3-button w3-display-topright">&times;</span>
+      <h1>Maestros 6° semestre</h1>
+    </div>
+    <div class="w3-container">
+      <img src="avatar-mujer.png" alt="" style="float:right; margin:10px;">
+      <h3>Lic.</h3>
+      <p><i>Matematica Avanzada</i></p>
+      <p>Lunes       3:00-6:00PM</p>
+    </div>
+    <div class="w3-container w3-red">
+      <p>Preparatoria 13 UdeG</p>
+    </div>
+  </div>
+</div>
+
+<!-- Materia de Analisis Economico -->
+<div id="economia" class="w3-modal">
+  <div class="w3-modal-content w3-animate-top">
+
+    <div class="w3-container w3-yellow">
+      <span onclick="document.getElementById('economia').style.display='none'"
+      class="w3-button w3-display-topright">&times;</span>
+      <h1>Maestros 6° semestre</h1>
+    </div>
+    <div class="w3-container">
+      <img src="avatar-hombre.jpg" alt="" style="float:right; margin:10px;">
+      <h3>Mtro.</h3>
+      <p> <i>Analisis Economico</i> </p>
+      <p>Martes       4:00-5:00PM</p>
+      <p>Miercoles       4:00-6:00PM</p>
+    </div>
+    <div class="w3-container w3-yellow">
+      <p>Preparatoria 13 UdeG</p>
+    </div>
+  </div>
+</div>
+
+
+
+  </body>
+  <script src="barbara.js" charset="utf-8"></script>
+  <script src="geografia.js" charset="utf-8"></script>
+  <script src="PC.js" charset="utf-8"></script>
+  <script src="RE.js" charset="utf-8"></script>
+
+
+</html>
